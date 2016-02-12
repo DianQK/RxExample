@@ -11,17 +11,25 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 import Kingfisher
+import TransitionTreasury
 
 typealias TableSectionModel = AnimatableSectionModel<NSDate, NewsModel>
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, ModalTransitionDelegate {
     
     var disposeBag = DisposeBag()
+    
+    var tr_presentTransition: TRViewControllerTransitionDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = nil
         tableView.delegate = nil
+        
+        let launchVC = UIStoryboard(name: .Launch).instantiateViewControllerWithClass(LaunchViewController)
+        launchVC.tr_delegate = self
+        launchVC.view.subviews
+        tr_presentViewController(launchVC, method: ZhihuTransition.Launch(zoom: launchVC.launchImageView))
         
         let viewModel = NewsViewModel()
         /// 请求最新的 News

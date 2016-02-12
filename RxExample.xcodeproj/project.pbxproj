@@ -17,6 +17,12 @@
 		26821EDB1C630E53007DE547 /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDA1C630E53007DE547 /* CollectionCellModel.swift */; };
 		26821EDD1C631068007DE547 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDC1C631068007DE547 /* ExampleCollectionViewCell.swift */; };
 		26821EE01C631653007DE547 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDF1C631653007DE547 /* TableViewCellModel.swift */; };
+		2689084C1C6E2589004072CE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689084B1C6E2589004072CE /* LaunchViewController.swift */; };
+		2689084E1C6E26C2004072CE /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2689084D1C6E26C2004072CE /* Launch.storyboard */; };
+		268908501C6E2961004072CE /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689084F1C6E2961004072CE /* UIStoryboardExtension.swift */; };
+		268908521C6E29BF004072CE /* LaunchImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268908511C6E29BF004072CE /* LaunchImageModel.swift */; };
+		268908551C6E2E99004072CE /* LaunchAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268908541C6E2E99004072CE /* LaunchAnimationTransition.swift */; };
+		268908571C6E2EB5004072CE /* ZhihuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268908561C6E2EB5004072CE /* ZhihuTransition.swift */; };
 		26C108F01C6C8CB300F1E61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C108EF1C6C8CB300F1E61E /* AppDelegate.swift */; };
 		26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C108F31C6C8CB300F1E61E /* Main.storyboard */; };
 		26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C108F61C6C8CB300F1E61E /* Assets.xcassets */; };
@@ -48,6 +54,12 @@
 		26821EDA1C630E53007DE547 /* CollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellModel.swift; sourceTree = "<group>"; };
 		26821EDC1C631068007DE547 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		26821EDF1C631653007DE547 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		2689084B1C6E2589004072CE /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		2689084D1C6E26C2004072CE /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		2689084F1C6E2961004072CE /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		268908511C6E29BF004072CE /* LaunchImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchImageModel.swift; sourceTree = "<group>"; };
+		268908541C6E2E99004072CE /* LaunchAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAnimationTransition.swift; sourceTree = "<group>"; };
+		268908561C6E2EB5004072CE /* ZhihuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhihuTransition.swift; sourceTree = "<group>"; };
 		26C108ED1C6C8CB300F1E61E /* RxZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C108EF1C6C8CB300F1E61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C108F41C6C8CB300F1E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,9 +144,19 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		268908531C6E2CAD004072CE /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				268908541C6E2E99004072CE /* LaunchAnimationTransition.swift */,
+				268908561C6E2EB5004072CE /* ZhihuTransition.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		26C108EE1C6C8CB300F1E61E /* RxZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				268908531C6E2CAD004072CE /* Transition */,
 				265892B01C6DD116001F0171 /* Refresh */,
 				26D104941C6D8E3200CA5C22 /* Extension */,
 				26C108FF1C6C965300F1E61E /* Theme */,
@@ -181,6 +203,9 @@
 		26C109021C6C965300F1E61E /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				2689084B1C6E2589004072CE /* LaunchViewController.swift */,
+				268908511C6E29BF004072CE /* LaunchImageModel.swift */,
+				2689084D1C6E26C2004072CE /* Launch.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -189,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				26D25D4A1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift */,
+				2689084F1C6E2961004072CE /* UIStoryboardExtension.swift */,
 				26D25D471C6CCCD7007E0D69 /* Response+ObjectMapper.swift */,
 				263E37E51C6E113F0033741C /* NSDateExtension.swift */,
 			);
@@ -339,6 +365,7 @@
 				26C108FA1C6C8CB300F1E61E /* LaunchScreen.storyboard in Resources */,
 				26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */,
 				26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */,
+				2689084E1C6E26C2004072CE /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,17 +479,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268908551C6E2E99004072CE /* LaunchAnimationTransition.swift in Sources */,
+				2689084C1C6E2589004072CE /* LaunchViewController.swift in Sources */,
 				263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */,
 				26C109081C6C9D8C00F1E61E /* Logger.swift in Sources */,
+				268908521C6E29BF004072CE /* LaunchImageModel.swift in Sources */,
 				26C108F01C6C8CB300F1E61E /* AppDelegate.swift in Sources */,
 				26D25D491C6CCCD7007E0D69 /* Response+ObjectMapper.swift in Sources */,
 				26C109101C6CCB3A00F1E61E /* NewsModel.swift in Sources */,
+				268908571C6E2EB5004072CE /* ZhihuTransition.swift in Sources */,
 				26C109041C6C975500F1E61E /* Config.swift in Sources */,
 				265892B21C6DD125001F0171 /* RefreshExtension.swift in Sources */,
 				26C1090C1C6CC65900F1E61E /* MainTableViewController.swift in Sources */,
 				26D104981C6D953900CA5C22 /* NewsViewModel.swift in Sources */,
 				26D25D4B1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift in Sources */,
 				26C1090E1C6CC66700F1E61E /* MainTableViewCell.swift in Sources */,
+				268908501C6E2961004072CE /* UIStoryboardExtension.swift in Sources */,
 				26C109061C6C97B400F1E61E /* ZhihuDailyAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

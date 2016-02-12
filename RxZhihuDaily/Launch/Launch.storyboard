@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="zC4-R7-RF1">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="PPo-Rq-irh" customClass="LaunchViewController" customModule="RxZhihuDaily" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8PT-9S-kI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFt-gG-Aww"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yQP-u3-P0X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VvS-3r-a8K">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_Logo_Plus" translatesAutoresizingMaskIntoConstraints="NO" id="xn3-1e-1jG">
+                                <rect key="frame" x="0.0" y="283" width="320" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="LGp-SV-MeF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xn3-1e-1jG" firstAttribute="leading" secondItem="yQP-u3-P0X" secondAttribute="leading" id="5ZG-PD-C8V"/>
+                            <constraint firstItem="VFt-gG-Aww" firstAttribute="top" secondItem="VvS-3r-a8K" secondAttribute="bottom" id="MnX-So-FD9"/>
+                            <constraint firstItem="VFt-gG-Aww" firstAttribute="top" secondItem="xn3-1e-1jG" secondAttribute="bottom" id="Net-xJ-QFO"/>
+                            <constraint firstAttribute="trailing" secondItem="VvS-3r-a8K" secondAttribute="trailing" id="YgM-YW-RSD"/>
+                            <constraint firstItem="VvS-3r-a8K" firstAttribute="top" secondItem="yQP-u3-P0X" secondAttribute="top" id="aJg-62-A3e"/>
+                            <constraint firstItem="VvS-3r-a8K" firstAttribute="leading" secondItem="yQP-u3-P0X" secondAttribute="leading" id="r1m-x3-OBg"/>
+                            <constraint firstAttribute="trailing" secondItem="xn3-1e-1jG" secondAttribute="trailing" id="vZp-V3-hsD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchImageView" destination="VvS-3r-a8K" id="m42-Em-ior"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldi-Gl-VJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249.59999999999999" y="312.39999999999998"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash_Logo_Plus" width="768" height="285"/>
+    </resources>
+</document>

@@ -25,8 +25,6 @@ let ZhihuDailyProvider = RxMoyaProvider<ZhihuDailyAPI>(endpointClosure: MoyaProv
     manager: MoyaProvider<ZhihuDailyAPI>.DefaultAlamofireManager(),
     plugins: [NetworkLoggerPlugin()])
 
-public typealias ZhihuDate = Int
-
 public enum ZhihuDailyAPI {
     case NewsLatest
     case NewsBefore(date: NSDate) //改

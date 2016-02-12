@@ -19,6 +19,11 @@ class Config {
     
     static let host = "http://news-at.zhihu.com"
     
+    struct Launch {
+        static let launchTime: Double = 1
+        static let launchImageKey = "LaunchImageURL"
+    }
+    
     struct Color {
         static let blue = UIColor(red: 24.0/255.0, green: 144.0/255.0, blue: 211.0/255.0, alpha: 1)
         static let white = UIColor.whiteColor()

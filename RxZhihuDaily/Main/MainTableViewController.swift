@@ -66,7 +66,7 @@ class MainTableViewController: UITableViewController {
         tableView.rx_pullRefresh
             .subscribeNext { requestLatestNews() }
             .addDisposableTo(disposeBag)
-        /// 上啦加载更多
+        /// 上拉加载更多
         tableView.rx_loadRefresh
             .subscribeNext { requestBeforeNews() }
             .addDisposableTo(disposeBag)

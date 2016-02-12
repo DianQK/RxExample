@@ -18,6 +18,7 @@ class ExampleButtonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         buttonOutlet.rx_tap.subscribeNext {
             print("You clicked button.")
         }.addDisposableTo(disposeBag)

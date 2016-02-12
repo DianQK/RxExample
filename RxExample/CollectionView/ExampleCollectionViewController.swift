@@ -21,6 +21,8 @@ class ExampleCollectionViewController: UICollectionViewController {
     /// 保存所有的 Section
     var sections = Variable([CollectionSectionModel]())
     
+    
+    
     static let initialValue: [CollectionCellModel] = [
         CollectionCellModel(name: "K111", age: 11),
         CollectionCellModel(name: "K222", age: 22),

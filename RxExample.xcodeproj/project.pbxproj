@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D60D2367947B72FFDDBE2E /* Pods_RxZhihuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D85AB79CC47674336C695C7 /* Pods_RxZhihuDaily.framework */; };
+		263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E37E51C6E113F0033741C /* NSDateExtension.swift */; };
+		265892B21C6DD125001F0171 /* RefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265892B11C6DD125001F0171 /* RefreshExtension.swift */; };
 		26821ECD1C630C70007DE547 /* ExampleButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EC81C630C70007DE547 /* ExampleButtonViewController.swift */; };
 		26821ECE1C630C70007DE547 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821ECA1C630C70007DE547 /* ExampleTableViewCell.swift */; };
 		26821ECF1C630C70007DE547 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821ECB1C630C70007DE547 /* ExampleTableViewController.swift */; };
@@ -14,6 +17,19 @@
 		26821EDB1C630E53007DE547 /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDA1C630E53007DE547 /* CollectionCellModel.swift */; };
 		26821EDD1C631068007DE547 /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDC1C631068007DE547 /* ExampleCollectionViewCell.swift */; };
 		26821EE01C631653007DE547 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EDF1C631653007DE547 /* TableViewCellModel.swift */; };
+		26C108F01C6C8CB300F1E61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C108EF1C6C8CB300F1E61E /* AppDelegate.swift */; };
+		26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C108F31C6C8CB300F1E61E /* Main.storyboard */; };
+		26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C108F61C6C8CB300F1E61E /* Assets.xcassets */; };
+		26C108FA1C6C8CB300F1E61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C108F81C6C8CB300F1E61E /* LaunchScreen.storyboard */; };
+		26C109041C6C975500F1E61E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C109031C6C975500F1E61E /* Config.swift */; };
+		26C109061C6C97B400F1E61E /* ZhihuDailyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C109051C6C97B400F1E61E /* ZhihuDailyAPI.swift */; };
+		26C109081C6C9D8C00F1E61E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C109071C6C9D8C00F1E61E /* Logger.swift */; };
+		26C1090C1C6CC65900F1E61E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1090B1C6CC65900F1E61E /* MainTableViewController.swift */; };
+		26C1090E1C6CC66700F1E61E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1090D1C6CC66700F1E61E /* MainTableViewCell.swift */; };
+		26C109101C6CCB3A00F1E61E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1090F1C6CCB3A00F1E61E /* NewsModel.swift */; };
+		26D104981C6D953900CA5C22 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D104971C6D953900CA5C22 /* NewsViewModel.swift */; };
+		26D25D491C6CCCD7007E0D69 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D25D471C6CCCD7007E0D69 /* Response+ObjectMapper.swift */; };
+		26D25D4B1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D25D4A1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift */; };
 		26DEB84E1C60536100353833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEB84D1C60536100353833 /* AppDelegate.swift */; };
 		26DEB8531C60536100353833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB8511C60536100353833 /* Main.storyboard */; };
 		26DEB8551C60536100353833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DEB8541C60536100353833 /* Assets.xcassets */; };
@@ -22,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206EAC81B726A422CCB6764C /* Pods-RxZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxZhihuDaily/Pods-RxZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
+		263E37E51C6E113F0033741C /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		265892B11C6DD125001F0171 /* RefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshExtension.swift; sourceTree = "<group>"; };
 		26821EC81C630C70007DE547 /* ExampleButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleButtonViewController.swift; sourceTree = "<group>"; };
 		26821ECA1C630C70007DE547 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		26821ECB1C630C70007DE547 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
@@ -29,18 +48,43 @@
 		26821EDA1C630E53007DE547 /* CollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellModel.swift; sourceTree = "<group>"; };
 		26821EDC1C631068007DE547 /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		26821EDF1C631653007DE547 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		26C108ED1C6C8CB300F1E61E /* RxZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C108EF1C6C8CB300F1E61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26C108F41C6C8CB300F1E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26C108F61C6C8CB300F1E61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26C108F91C6C8CB300F1E61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26C108FB1C6C8CB300F1E61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26C109031C6C975500F1E61E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		26C109051C6C97B400F1E61E /* ZhihuDailyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhihuDailyAPI.swift; sourceTree = "<group>"; };
+		26C109071C6C9D8C00F1E61E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		26C1090B1C6CC65900F1E61E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		26C1090D1C6CC66700F1E61E /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		26C1090F1C6CCB3A00F1E61E /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		26D104971C6D953900CA5C22 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		26D25D471C6CCCD7007E0D69 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Response+ObjectMapper.swift"; path = "../Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		26D25D4A1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Observable+ObjectMapper.swift"; path = "../Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		26DEB84A1C60536100353833 /* RxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DEB84D1C60536100353833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26DEB8521C60536100353833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26DEB8541C60536100353833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DEB8571C60536100353833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DEB8591C60536100353833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D85AB79CC47674336C695C7 /* Pods_RxZhihuDaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxZhihuDaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A2C959FFE623926A425D01 /* Pods-RxExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxExample/Pods-RxExample.release.xcconfig"; sourceTree = "<group>"; };
 		365311C8DEEA0FF8F576B385 /* Pods_RxExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F6910BC4383F5812542C75 /* Pods-RxZhihuDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxZhihuDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxZhihuDaily/Pods-RxZhihuDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		A709BCDCE6B9A2D6DBBFF2E5 /* Pods-RxExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxExample/Pods-RxExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26C108EA1C6C8CB300F1E61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D60D2367947B72FFDDBE2E /* Pods_RxZhihuDaily.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DEB8471C60536100353833 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265892B01C6DD116001F0171 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				265892B11C6DD125001F0171 /* RefreshExtension.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
 		26821EC71C630C70007DE547 /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +132,74 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		26C108EE1C6C8CB300F1E61E /* RxZhihuDaily */ = {
+			isa = PBXGroup;
+			children = (
+				265892B01C6DD116001F0171 /* Refresh */,
+				26D104941C6D8E3200CA5C22 /* Extension */,
+				26C108FF1C6C965300F1E61E /* Theme */,
+				26C109001C6C965300F1E61E /* Side */,
+				26C109011C6C965300F1E61E /* Main */,
+				26C109021C6C965300F1E61E /* Launch */,
+				26C108EF1C6C8CB300F1E61E /* AppDelegate.swift */,
+				26C108F31C6C8CB300F1E61E /* Main.storyboard */,
+				26C108F61C6C8CB300F1E61E /* Assets.xcassets */,
+				26C108F81C6C8CB300F1E61E /* LaunchScreen.storyboard */,
+				26C109031C6C975500F1E61E /* Config.swift */,
+				26C108FB1C6C8CB300F1E61E /* Info.plist */,
+				26C109051C6C97B400F1E61E /* ZhihuDailyAPI.swift */,
+				26C109071C6C9D8C00F1E61E /* Logger.swift */,
+			);
+			path = RxZhihuDaily;
+			sourceTree = "<group>";
+		};
+		26C108FF1C6C965300F1E61E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		26C109001C6C965300F1E61E /* Side */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Side;
+			sourceTree = "<group>";
+		};
+		26C109011C6C965300F1E61E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				26C1090B1C6CC65900F1E61E /* MainTableViewController.swift */,
+				26C1090D1C6CC66700F1E61E /* MainTableViewCell.swift */,
+				26C1090F1C6CCB3A00F1E61E /* NewsModel.swift */,
+				26D104971C6D953900CA5C22 /* NewsViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		26C109021C6C965300F1E61E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		26D104941C6D8E3200CA5C22 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26D25D4A1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift */,
+				26D25D471C6CCCD7007E0D69 /* Response+ObjectMapper.swift */,
+				263E37E51C6E113F0033741C /* NSDateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		26DEB8411C60536100353833 = {
 			isa = PBXGroup;
 			children = (
 				26DEB84C1C60536100353833 /* RxExample */,
+				26C108EE1C6C8CB300F1E61E /* RxZhihuDaily */,
 				26DEB84B1C60536100353833 /* Products */,
 				A77D0DB6C67CFDB854664227 /* Pods */,
 				33C85ABDA0EACD7828EEF9E9 /* Frameworks */,
@@ -94,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				26DEB84A1C60536100353833 /* RxExample.app */,
+				26C108ED1C6C8CB300F1E61E /* RxZhihuDaily.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				365311C8DEEA0FF8F576B385 /* Pods_RxExample.framework */,
+				2D85AB79CC47674336C695C7 /* Pods_RxZhihuDaily.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +244,8 @@
 			children = (
 				A709BCDCE6B9A2D6DBBFF2E5 /* Pods-RxExample.debug.xcconfig */,
 				31A2C959FFE623926A425D01 /* Pods-RxExample.release.xcconfig */,
+				87F6910BC4383F5812542C75 /* Pods-RxZhihuDaily.debug.xcconfig */,
+				206EAC81B726A422CCB6764C /* Pods-RxZhihuDaily.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,6 +253,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		26C108EC1C6C8CB300F1E61E /* RxZhihuDaily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26C108FE1C6C8CB300F1E61E /* Build configuration list for PBXNativeTarget "RxZhihuDaily" */;
+			buildPhases = (
+				9F19FFEC7C28BD56E13061BA /* Check Pods Manifest.lock */,
+				26C108E91C6C8CB300F1E61E /* Sources */,
+				26C108EA1C6C8CB300F1E61E /* Frameworks */,
+				26C108EB1C6C8CB300F1E61E /* Resources */,
+				2D31FCE9877AB6C91767047C /* Embed Pods Frameworks */,
+				ACE814E0214DF33698FFE2CA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxZhihuDaily;
+			productName = RxZhihuDaily;
+			productReference = 26C108ED1C6C8CB300F1E61E /* RxZhihuDaily.app */;
+			productType = "com.apple.product-type.application";
+		};
 		26DEB8491C60536100353833 /* RxExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26DEB85C1C60536100353833 /* Build configuration list for PBXNativeTarget "RxExample" */;
@@ -163,6 +303,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = DianQK;
 				TargetAttributes = {
+					26C108EC1C6C8CB300F1E61E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HY634B3FW2;
+					};
 					26DEB8491C60536100353833 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -182,11 +326,22 @@
 			projectRoot = "";
 			targets = (
 				26DEB8491C60536100353833 /* RxExample */,
+				26C108EC1C6C8CB300F1E61E /* RxZhihuDaily */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		26C108EB1C6C8CB300F1E61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C108FA1C6C8CB300F1E61E /* LaunchScreen.storyboard in Resources */,
+				26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */,
+				26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DEB8481C60536100353833 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +370,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxExample/Pods-RxExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2D31FCE9877AB6C91767047C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxZhihuDaily/Pods-RxZhihuDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F19FFEC7C28BD56E13061BA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AC80C7084B9F873877CEBD3E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +413,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxExample/Pods-RxExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE814E0214DF33698FFE2CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxZhihuDaily/Pods-RxZhihuDaily-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDC8449FFE8444C248873D8B /* Check Pods Manifest.lock */ = {
@@ -248,6 +448,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		26C108E91C6C8CB300F1E61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */,
+				26C109081C6C9D8C00F1E61E /* Logger.swift in Sources */,
+				26C108F01C6C8CB300F1E61E /* AppDelegate.swift in Sources */,
+				26D25D491C6CCCD7007E0D69 /* Response+ObjectMapper.swift in Sources */,
+				26C109101C6CCB3A00F1E61E /* NewsModel.swift in Sources */,
+				26C109041C6C975500F1E61E /* Config.swift in Sources */,
+				265892B21C6DD125001F0171 /* RefreshExtension.swift in Sources */,
+				26C1090C1C6CC65900F1E61E /* MainTableViewController.swift in Sources */,
+				26D104981C6D953900CA5C22 /* NewsViewModel.swift in Sources */,
+				26D25D4B1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift in Sources */,
+				26C1090E1C6CC66700F1E61E /* MainTableViewCell.swift in Sources */,
+				26C109061C6C97B400F1E61E /* ZhihuDailyAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26DEB8461C60536100353833 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +485,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		26C108F31C6C8CB300F1E61E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26C108F41C6C8CB300F1E61E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26C108F81C6C8CB300F1E61E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26C108F91C6C8CB300F1E61E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		26DEB8511C60536100353833 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +520,31 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		26C108FC1C6C8CB300F1E61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F6910BC4383F5812542C75 /* Pods-RxZhihuDaily.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxZhihuDaily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.RxZhihuDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26C108FD1C6C8CB300F1E61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206EAC81B726A422CCB6764C /* Pods-RxZhihuDaily.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RxZhihuDaily/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dianqk.RxZhihuDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		26DEB85A1C60536100353833 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		26C108FE1C6C8CB300F1E61E /* Build configuration list for PBXNativeTarget "RxZhihuDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26C108FC1C6C8CB300F1E61E /* Debug */,
+				26C108FD1C6C8CB300F1E61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		26DEB8451C60536100353833 /* Build configuration list for PBXProject "RxExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

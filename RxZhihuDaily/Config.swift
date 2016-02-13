@@ -19,6 +19,8 @@ class Config {
     
     static let host = "http://news-at.zhihu.com"
     
+    static let loadMoreNumber = 3 /// 一次下拉刷新加载的天数
+    
     struct Launch {
         static let launchTime: Double = 1
         static let launchImageKey = "LaunchImageURL"

@@ -35,4 +35,5 @@ target 'RxZhihuDaily' do
     network
     debug
     pod 'SwiftDate'
+    pod 'SnapKit'
 end

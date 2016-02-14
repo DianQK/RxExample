@@ -29,7 +29,6 @@ class MainTableViewController: UITableViewController, ModalTransitionDelegate {
         launchVC.tr_delegate = self
         launchVC.view.subviews
         tr_presentViewController(launchVC, method: ZhihuTransition.Launch(zoom: launchVC.launchImageView))
-        
         let viewModel = NewsViewModel()
         /// 请求最新的 News
         func requestLatestNews() {
@@ -85,7 +84,14 @@ class MainTableViewController: UITableViewController, ModalTransitionDelegate {
         tableView.rx_loadRefresh
             .subscribeNext { requestListNews() }
             .addDisposableTo(disposeBag)
-        /// 设置 delegate
+        /// 设置 delegate ，这里是为了设置 viewForHeaderInSection
         tableView.rx_setDelegate(viewModel)
+        /// 添加轮播视图
+        tableView.tableHeaderView = viewModel.circleViewfor(tableView, disposeBag: disposeBag)
+        /// 轮播的点击事件
+        (tableView.tableHeaderView as! CircleView).collectionView.rx_itemSelected
+            .subscribeNext {
+            log.info("\($0)")
+        }.addDisposableTo(disposeBag)
     }
 }

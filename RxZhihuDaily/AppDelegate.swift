@@ -40,6 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = revealController
         window?.makeKeyAndVisible()
         
+        let navigationBarAppearance = UINavigationBar.appearance()
+        let textAttributes = [NSForegroundColorAttributeName: Config.Color.white]
+        navigationBarAppearance.barTintColor = Config.Color.white
+        navigationBarAppearance.tintColor = Config.Color.white
+        navigationBarAppearance.titleTextAttributes = textAttributes
+        
         return true
     }
 

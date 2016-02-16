@@ -12,6 +12,7 @@ public enum StoryboardName: String {
     case Main = "Main"
     case Launch = "Launch"
     case Side = "Side"
+    case Theme = "Theme"
 }
 
 public extension UIStoryboard {

@@ -30,7 +30,7 @@ public enum ZhihuDailyAPI {
     case NewsBefore(date: NSDate) //改
     case News(id: String)
     case ThemesList
-    case Theme(id: String)
+    case Theme(id: Int)
     case StartImage
 }
 
@@ -47,7 +47,7 @@ extension ZhihuDailyAPI: TargetType {
         case .ThemesList:
             return "/api/4/themes"
         case .Theme(let id):
-            return "/api/4/theme/" + id
+            return "/api/4/theme/\(id)"
         case .StartImage:
             return "/api/4/start-image/1080*1776"
         }

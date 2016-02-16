@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="8cK-jU-iUL">
+            <objects>
+                <tableViewController storyboardIdentifier="ThemeViewController" automaticallyAdjustsScrollViewInsets="NO" id="fP1-MQ-NeH" customClass="ThemeViewController" customModule="RxZhihuDaily" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="HSn-5W-f6t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThemeNewCell" rowHeight="90" id="utV-Bv-DiG" customClass="ThemeNewCell" customModule="RxZhihuDaily" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="utV-Bv-DiG" id="2Xn-T2-zb1">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acg-tg-7Vs">
+                                            <rect key="frame" x="15" y="15" width="200" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gCS-Me-sXT">
+                                            <rect key="frame" x="230" y="15" width="75" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="VJA-Xv-99f"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gCS-Me-sXT" secondAttribute="trailing" constant="15" id="663-Fv-Pr2"/>
+                                        <constraint firstItem="acg-tg-7Vs" firstAttribute="top" secondItem="2Xn-T2-zb1" secondAttribute="top" constant="15" id="6QR-ck-7UV"/>
+                                        <constraint firstItem="gCS-Me-sXT" firstAttribute="top" secondItem="2Xn-T2-zb1" secondAttribute="top" constant="15" id="AcT-kN-1bJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="acg-tg-7Vs" secondAttribute="trailing" priority="700" constant="15" id="CW5-gM-sBP"/>
+                                        <constraint firstItem="acg-tg-7Vs" firstAttribute="leading" secondItem="2Xn-T2-zb1" secondAttribute="leading" constant="15" id="Q8u-m5-EFg"/>
+                                        <constraint firstItem="gCS-Me-sXT" firstAttribute="leading" secondItem="acg-tg-7Vs" secondAttribute="trailing" priority="800" constant="15" id="UNw-Ai-DUB"/>
+                                        <constraint firstAttribute="bottom" secondItem="gCS-Me-sXT" secondAttribute="bottom" constant="15" id="eKP-qZ-K7i"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentImageView" destination="gCS-Me-sXT" id="ABm-9n-fZ9"/>
+                                    <outlet property="nameLabel" destination="acg-tg-7Vs" id="H6f-90-UVf"/>
+                                    <outlet property="trailingLayoutConstraint" destination="CW5-gM-sBP" id="vg2-o5-EUq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="PXB-oh-4ZJ">
+                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="HEP-6c-YJ1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4o-Yg-hwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="547"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back_White" width="44" height="44"/>
+    </resources>
+</document>

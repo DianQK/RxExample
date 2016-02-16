@@ -73,7 +73,7 @@ class MainTableViewController: UITableViewController, ModalTransitionDelegate {
         dataSource.configureCell = { (tv, ip, i) in
             let cell = tv.dequeueReusableCellWithIdentifier("\(MainTableViewCell.self)") as! MainTableViewCell
             cell.contentLabel.text = i.value.title
-            cell.contentImageView.kf_setImageWithURL(NSURL(string: i.value.images.first ?? "")!)
+            cell.contentImageView.kf_setImageWithURL(NSURL(string: i.value.images!.first ?? "")!)
             return cell
         }
         /// 绑定数据源

@@ -11,6 +11,12 @@
 		26044F221C71CAB00091DB54 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26044F211C71CAB00091DB54 /* UINavigationControllerExtension.swift */; };
 		26044F241C71D61D0091DB54 /* UINavgationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26044F231C71D61D0091DB54 /* UINavgationExtension.swift */; };
 		262C71A01C72B52C00ECBAC3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C719F1C72B52C00ECBAC3 /* UITableViewExtension.swift */; };
+		262C71A21C72EEF600ECBAC3 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C71A11C72EEF600ECBAC3 /* ThemeViewController.swift */; };
+		262C71A41C72EF0A00ECBAC3 /* Theme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262C71A31C72EF0A00ECBAC3 /* Theme.storyboard */; };
+		262C71A71C72F0B800ECBAC3 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C71A61C72F0B800ECBAC3 /* ParallaxHeaderView.swift */; };
+		262C71A91C7303A900ECBAC3 /* ThemeNewsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C71A81C7303A900ECBAC3 /* ThemeNewsListModel.swift */; };
+		262C71AB1C731C5C00ECBAC3 /* ThemeNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C71AA1C731C5C00ECBAC3 /* ThemeNewCell.swift */; };
+		262C71AE1C73354900ECBAC3 /* ImageEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C71AD1C73354900ECBAC3 /* ImageEffects.swift */; };
 		263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E37E51C6E113F0033741C /* NSDateExtension.swift */; };
 		2645FA601C72AD9E00D98014 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645FA5F1C72AD9E00D98014 /* UIViewExtension.swift */; };
 		2657523F1C720218001482C4 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657523E1C720218001482C4 /* SideViewController.swift */; };
@@ -58,6 +64,12 @@
 		26044F211C71CAB00091DB54 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		26044F231C71D61D0091DB54 /* UINavgationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavgationExtension.swift; sourceTree = "<group>"; };
 		262C719F1C72B52C00ECBAC3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		262C71A11C72EEF600ECBAC3 /* ThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		262C71A31C72EF0A00ECBAC3 /* Theme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Theme.storyboard; sourceTree = "<group>"; };
+		262C71A61C72F0B800ECBAC3 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		262C71A81C7303A900ECBAC3 /* ThemeNewsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeNewsListModel.swift; sourceTree = "<group>"; };
+		262C71AA1C731C5C00ECBAC3 /* ThemeNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeNewCell.swift; sourceTree = "<group>"; };
+		262C71AD1C73354900ECBAC3 /* ImageEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEffects.swift; sourceTree = "<group>"; };
 		263E37E51C6E113F0033741C /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		2645FA5F1C72AD9E00D98014 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2657523E1C720218001482C4 /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +140,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262C71A51C72F09C00ECBAC3 /* ParallaxHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				262C71A61C72F0B800ECBAC3 /* ParallaxHeaderView.swift */,
+			);
+			path = ParallaxHeaderView;
+			sourceTree = "<group>";
+		};
+		262C71AC1C73353D00ECBAC3 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				262C71AD1C73354900ECBAC3 /* ImageEffects.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		265892B01C6DD116001F0171 /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +204,8 @@
 		26C108EE1C6C8CB300F1E61E /* RxZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				262C71AC1C73353D00ECBAC3 /* Image */,
+				262C71A51C72F09C00ECBAC3 /* ParallaxHeaderView */,
 				26EE59891C6F7D6B007E0911 /* Circle */,
 				268908531C6E2CAD004072CE /* Transition */,
 				265892B01C6DD116001F0171 /* Refresh */,
@@ -199,6 +229,10 @@
 		26C108FF1C6C965300F1E61E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				262C71A11C72EEF600ECBAC3 /* ThemeViewController.swift */,
+				262C71A31C72EF0A00ECBAC3 /* Theme.storyboard */,
+				262C71A81C7303A900ECBAC3 /* ThemeNewsListModel.swift */,
+				262C71AA1C731C5C00ECBAC3 /* ThemeNewCell.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -404,6 +438,7 @@
 				26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */,
 				26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */,
 				2689084E1C6E26C2004072CE /* Launch.storyboard in Resources */,
+				262C71A41C72EF0A00ECBAC3 /* Theme.storyboard in Resources */,
 				265752411C720AD4001482C4 /* Side.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,11 +561,13 @@
 				2657523F1C720218001482C4 /* SideViewController.swift in Sources */,
 				26EE598D1C6F80D8007E0911 /* CircleCollectionViewCell.swift in Sources */,
 				26C109081C6C9D8C00F1E61E /* Logger.swift in Sources */,
+				262C71A71C72F0B800ECBAC3 /* ParallaxHeaderView.swift in Sources */,
 				268908521C6E29BF004072CE /* LaunchImageModel.swift in Sources */,
 				26C108F01C6C8CB300F1E61E /* AppDelegate.swift in Sources */,
 				26D25D491C6CCCD7007E0D69 /* Response+ObjectMapper.swift in Sources */,
 				26C109101C6CCB3A00F1E61E /* NewsModel.swift in Sources */,
 				268908571C6E2EB5004072CE /* ZhihuTransition.swift in Sources */,
+				262C71AE1C73354900ECBAC3 /* ImageEffects.swift in Sources */,
 				26C109041C6C975500F1E61E /* Config.swift in Sources */,
 				265752431C720D43001482C4 /* SideTableViewCell.swift in Sources */,
 				265752451C720E7E001482C4 /* ThemeModel.swift in Sources */,
@@ -542,8 +579,11 @@
 				2645FA601C72AD9E00D98014 /* UIViewExtension.swift in Sources */,
 				26D25D4B1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift in Sources */,
 				26C1090E1C6CC66700F1E61E /* MainTableViewCell.swift in Sources */,
+				262C71AB1C731C5C00ECBAC3 /* ThemeNewCell.swift in Sources */,
+				262C71A21C72EEF600ECBAC3 /* ThemeViewController.swift in Sources */,
 				268908501C6E2961004072CE /* UIStoryboardExtension.swift in Sources */,
 				26C109061C6C97B400F1E61E /* ZhihuDailyAPI.swift in Sources */,
+				262C71A91C7303A900ECBAC3 /* ThemeNewsListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

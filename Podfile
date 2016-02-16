@@ -13,7 +13,7 @@ def network
     pod 'TransitionTreasury'
     pod 'Moya'
     pod 'Moya/RxSwift'
-    pod 'ObjectMapper'
+    pod 'ObjectMapper' #更好的选择https://github.com/LoganWright/Genome.git
     pod 'Kingfisher'
 end
 

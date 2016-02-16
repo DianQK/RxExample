@@ -15,15 +15,15 @@ struct NewsListModel {
 }
 
 struct NewsModel {
-    var ga_prefix: String!
+    var ga_prefix: String?
     var id: Int!
-    var images: [String]!
+    var images: [String]?
     var title: String!
     var type: Int!
 }
 
 struct TopNewsModel {
-    var ga_prefix: String!
+    var ga_prefix: String?
     var id: Int!
     var image: String!
     var title: String!

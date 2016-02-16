@@ -11,6 +11,7 @@ import RxCocoa
 import RxDataSources
 import Kingfisher
 import TransitionTreasury
+import SWRevealViewController
 
 typealias TableSectionModel = AnimatableSectionModel<NSDate, NewsModel>
 
@@ -22,8 +23,17 @@ class MainTableViewController: UITableViewController, ModalTransitionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.lt_backgroundColor = UIColor.clearColor()
+        let revealController = self.revealViewController()
+        view.addGestureRecognizer(revealController.tapGestureRecognizer())
+        view.addGestureRecognizer(revealController.panGestureRecognizer())
+        navigationItem.leftBarButtonItem?.rx_tap.subscribeNext {
+            revealController.revealToggleAnimated(true)
+        }.addDisposableTo(disposeBag)
         tableView.dataSource = nil
         tableView.delegate = nil
+        navigationController?.navigationBar.barTintColor = Config.Color.blue.colorWithAlphaComponent(0.5)
         /// 启动动画
         let launchVC = UIStoryboard(name: .Launch).instantiateViewControllerWithClass(LaunchViewController)
         launchVC.tr_delegate = self
@@ -93,5 +103,15 @@ class MainTableViewController: UITableViewController, ModalTransitionDelegate {
             .subscribeNext {
             log.info("\($0)")
         }.addDisposableTo(disposeBag)
+        /// 设置透明度
+        tableView.rx_contentOffset.subscribeNext { [unowned self] in
+            let alpha = min(1, $0.y / 136)
+            self.navigationController?.navigationBar.lt_backgroundColor = Config.Color.blue.colorWithAlphaComponent(alpha)
+        }.addDisposableTo(disposeBag)
+    }
+    
+    //设置StatusBar为白色
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 }

@@ -29,5 +29,6 @@ class Config {
     struct Color {
         static let blue = UIColor(red: 24.0/255.0, green: 144.0/255.0, blue: 211.0/255.0, alpha: 1)
         static let white = UIColor.whiteColor()
+        static let selectedColor = UIColor(red: 27.0/255.0, green: 35.0/255.0, blue: 41.0/255.0, alpha: 1)
     }
 }

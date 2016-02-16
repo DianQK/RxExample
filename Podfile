@@ -36,4 +36,5 @@ target 'RxZhihuDaily' do
     debug
     pod 'SwiftDate'
     pod 'SnapKit'
+    pod 'SWRevealViewController'
 end

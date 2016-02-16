@@ -40,12 +40,21 @@ class NewsViewModel: NSObject, UIScrollViewDelegate {
     }
     /// Header 样式
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            return nil
+        }
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: tableView.sectionHeaderHeight))
         label.backgroundColor = Config.Color.blue
         label.text = sections.value[section].model.zhihuDate
         label.textColor = Config.Color.white
         label.textAlignment = .Center
         return label
+    }
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        return 38
     }
     /// 无限轮播，等待修改，并封装到 View 中，很乱的样子， == 头昏中
     func circleViewfor(tableView: UITableView, disposeBag: DisposeBag) -> CircleView {
@@ -81,14 +90,14 @@ class NewsViewModel: NSObject, UIScrollViewDelegate {
                 cell.titleLabel.text = element.title
             }.addDisposableTo(disposeBag)
         /// 自动轮播处理
-        self.hotNews.asObservable().filter { $0.count > 0 }.take(1).subscribeNext { _ in
-            Observable<Int>.interval(4, scheduler: MainScheduler.instance)
-                .map { [unowned self] in $0 % self.hotNews.value.count }
-                .subscribeNext { /// 从 2 -> last
-                    circleView.collectionView.scrollToItemAtIndexPath(NSIndexPath(forRow: $0 + 2, inSection: 0), atScrollPosition: .None, animated: true)
-                }
-                .addDisposableTo(disposeBag)
-        }.addDisposableTo(disposeBag)
+//        self.hotNews.asObservable().filter { $0.count > 0 }.take(1).subscribeNext { _ in
+//            Observable<Int>.interval(4, scheduler: MainScheduler.instance)
+//                .map { [unowned self] in $0 % self.hotNews.value.count }
+//                .subscribeNext { /// 从 2 -> last
+//                    circleView.collectionView.scrollToItemAtIndexPath(NSIndexPath(forRow: $0 + 2, inSection: 0), atScrollPosition: .None, animated: true)
+//                }
+//                .addDisposableTo(disposeBag)
+//        }.addDisposableTo(disposeBag)
         return circleView
     }
 

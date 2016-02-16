@@ -11,6 +11,7 @@ import UIKit
 public enum StoryboardName: String {
     case Main = "Main"
     case Launch = "Launch"
+    case Side = "Side"
 }
 
 public extension UIStoryboard {

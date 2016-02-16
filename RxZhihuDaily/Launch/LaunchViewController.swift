@@ -31,4 +31,9 @@ class LaunchViewController: UIViewController {
             self.tr_delegate?.modalViewControllerDismiss(callbackData: nil)
         }
     }
+    
+    //设置StatusBar为白色
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }

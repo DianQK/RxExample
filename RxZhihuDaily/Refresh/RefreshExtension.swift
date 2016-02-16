@@ -27,7 +27,7 @@ extension UIScrollView {
         activityIndicatorView.hidesWhenStopped = false
         addSubview(activityIndicatorView)
         return rx_contentOffset.asObservable()
-            .filter { $0.y != -64 }
+            .filter { $0.y != 0 }
             .filter { [unowned self] in
                 return $0.y + self.contentInset.top < -activityIndicatorView.frame.size.height && !activityIndicatorView.isAnimating() && !self.dragging
             }
@@ -46,7 +46,7 @@ extension UIScrollView {
         self.bounces = true
         (viewWithTag(_pulltoRefreshTag) as? UIActivityIndicatorView)?.stopAnimating()
         UIView.animateWithDuration(0.3) {
-            self.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+            self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
     }
     
@@ -78,7 +78,7 @@ extension UIScrollView {
         self.bounces = true
         (viewWithTag(_loadtoRefreshTag) as? UIActivityIndicatorView)?.stopAnimating()
         UIView.animateWithDuration(0.3) {
-            self.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+            self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
     }
     

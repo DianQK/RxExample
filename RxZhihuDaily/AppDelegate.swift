@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SWRevealViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 NSUserDefaults.standardUserDefaults().setURL(NSURL(string: $0.img), forKey: Config.Launch.launchImageKey)
             }
             .addDisposableTo(disposeBag)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let mainViewController = UIStoryboard(name: .Main).instantiateViewControllerWithClass(MainTableViewController)
+        let sideViewController = UIStoryboard(name: .Side).instantiateViewControllerWithClass(SideViewController)
+        let navgationController = UINavigationController(rootViewController: mainViewController)
+        
+        let revealController = SWRevealViewController(rearViewController: sideViewController, frontViewController: navgationController)
+        revealController.toggleAnimationType = .EaseOut
+        revealController.frontViewShadowOffset = CGSizeZero
+        revealController.frontViewShadowOpacity = 0
+        revealController.frontViewShadowRadius = 0
+        revealController.rearViewRevealWidth = 225
+        window?.rootViewController = revealController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

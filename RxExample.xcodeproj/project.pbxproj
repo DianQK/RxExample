@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		19D60D2367947B72FFDDBE2E /* Pods_RxZhihuDaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D85AB79CC47674336C695C7 /* Pods_RxZhihuDaily.framework */; };
+		26044F221C71CAB00091DB54 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26044F211C71CAB00091DB54 /* UINavigationControllerExtension.swift */; };
+		26044F241C71D61D0091DB54 /* UINavgationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26044F231C71D61D0091DB54 /* UINavgationExtension.swift */; };
+		262C71A01C72B52C00ECBAC3 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C719F1C72B52C00ECBAC3 /* UITableViewExtension.swift */; };
 		263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E37E51C6E113F0033741C /* NSDateExtension.swift */; };
+		2645FA601C72AD9E00D98014 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645FA5F1C72AD9E00D98014 /* UIViewExtension.swift */; };
+		2657523F1C720218001482C4 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2657523E1C720218001482C4 /* SideViewController.swift */; };
+		265752411C720AD4001482C4 /* Side.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265752401C720AD4001482C4 /* Side.storyboard */; };
+		265752431C720D43001482C4 /* SideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265752421C720D43001482C4 /* SideTableViewCell.swift */; };
+		265752451C720E7E001482C4 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265752441C720E7E001482C4 /* ThemeModel.swift */; };
 		265892B21C6DD125001F0171 /* RefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265892B11C6DD125001F0171 /* RefreshExtension.swift */; };
 		26821ECD1C630C70007DE547 /* ExampleButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821EC81C630C70007DE547 /* ExampleButtonViewController.swift */; };
 		26821ECE1C630C70007DE547 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26821ECA1C630C70007DE547 /* ExampleTableViewCell.swift */; };
@@ -47,7 +55,15 @@
 
 /* Begin PBXFileReference section */
 		206EAC81B726A422CCB6764C /* Pods-RxZhihuDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxZhihuDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxZhihuDaily/Pods-RxZhihuDaily.release.xcconfig"; sourceTree = "<group>"; };
+		26044F211C71CAB00091DB54 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		26044F231C71D61D0091DB54 /* UINavgationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavgationExtension.swift; sourceTree = "<group>"; };
+		262C719F1C72B52C00ECBAC3 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		263E37E51C6E113F0033741C /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		2645FA5F1C72AD9E00D98014 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2657523E1C720218001482C4 /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		265752401C720AD4001482C4 /* Side.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Side.storyboard; sourceTree = "<group>"; };
+		265752421C720D43001482C4 /* SideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideTableViewCell.swift; sourceTree = "<group>"; };
+		265752441C720E7E001482C4 /* ThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
 		265892B11C6DD125001F0171 /* RefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshExtension.swift; sourceTree = "<group>"; };
 		26821EC81C630C70007DE547 /* ExampleButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleButtonViewController.swift; sourceTree = "<group>"; };
 		26821ECA1C630C70007DE547 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
@@ -190,6 +206,10 @@
 		26C109001C6C965300F1E61E /* Side */ = {
 			isa = PBXGroup;
 			children = (
+				2657523E1C720218001482C4 /* SideViewController.swift */,
+				265752401C720AD4001482C4 /* Side.storyboard */,
+				265752421C720D43001482C4 /* SideTableViewCell.swift */,
+				265752441C720E7E001482C4 /* ThemeModel.swift */,
 			);
 			path = Side;
 			sourceTree = "<group>";
@@ -222,6 +242,10 @@
 				2689084F1C6E2961004072CE /* UIStoryboardExtension.swift */,
 				26D25D471C6CCCD7007E0D69 /* Response+ObjectMapper.swift */,
 				263E37E51C6E113F0033741C /* NSDateExtension.swift */,
+				26044F211C71CAB00091DB54 /* UINavigationControllerExtension.swift */,
+				26044F231C71D61D0091DB54 /* UINavgationExtension.swift */,
+				2645FA5F1C72AD9E00D98014 /* UIViewExtension.swift */,
+				262C719F1C72B52C00ECBAC3 /* UITableViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -380,6 +404,7 @@
 				26C108F71C6C8CB300F1E61E /* Assets.xcassets in Resources */,
 				26C108F51C6C8CB300F1E61E /* Main.storyboard in Resources */,
 				2689084E1C6E26C2004072CE /* Launch.storyboard in Resources */,
+				265752411C720AD4001482C4 /* Side.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,9 +519,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				268908551C6E2E99004072CE /* LaunchAnimationTransition.swift in Sources */,
+				26044F241C71D61D0091DB54 /* UINavgationExtension.swift in Sources */,
 				2689084C1C6E2589004072CE /* LaunchViewController.swift in Sources */,
 				26EE598B1C6F7D8D007E0911 /* CircleView.swift in Sources */,
 				263E37E61C6E113F0033741C /* NSDateExtension.swift in Sources */,
+				2657523F1C720218001482C4 /* SideViewController.swift in Sources */,
 				26EE598D1C6F80D8007E0911 /* CircleCollectionViewCell.swift in Sources */,
 				26C109081C6C9D8C00F1E61E /* Logger.swift in Sources */,
 				268908521C6E29BF004072CE /* LaunchImageModel.swift in Sources */,
@@ -505,9 +532,14 @@
 				26C109101C6CCB3A00F1E61E /* NewsModel.swift in Sources */,
 				268908571C6E2EB5004072CE /* ZhihuTransition.swift in Sources */,
 				26C109041C6C975500F1E61E /* Config.swift in Sources */,
+				265752431C720D43001482C4 /* SideTableViewCell.swift in Sources */,
+				265752451C720E7E001482C4 /* ThemeModel.swift in Sources */,
 				265892B21C6DD125001F0171 /* RefreshExtension.swift in Sources */,
 				26C1090C1C6CC65900F1E61E /* MainTableViewController.swift in Sources */,
 				26D104981C6D953900CA5C22 /* NewsViewModel.swift in Sources */,
+				262C71A01C72B52C00ECBAC3 /* UITableViewExtension.swift in Sources */,
+				26044F221C71CAB00091DB54 /* UINavigationControllerExtension.swift in Sources */,
+				2645FA601C72AD9E00D98014 /* UIViewExtension.swift in Sources */,
 				26D25D4B1C6CCCF0007E0D69 /* Observable+ObjectMapper.swift in Sources */,
 				26C1090E1C6CC66700F1E61E /* MainTableViewCell.swift in Sources */,
 				268908501C6E2961004072CE /* UIStoryboardExtension.swift in Sources */,

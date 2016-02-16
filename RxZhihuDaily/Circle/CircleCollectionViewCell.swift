@@ -17,7 +17,7 @@ class CircleCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         imageView = UIImageView(frame: frame)
-        imageView.contentMode = .ScaleAspectFill
+        imageView.contentMode = .Bottom
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         titleLabel = UILabel()
@@ -34,7 +34,9 @@ class CircleCollectionViewCell: UICollectionViewCell {
         addSubview(titleLabel)
 
         imageView.snp_makeConstraints { [unowned self] make in
-            make.edges.equalTo(self).inset(UIEdgeInsetsMake(0, 0, 0, 0))
+            make.left.equalTo(self).offset(0)
+            make.right.equalTo(self).offset(0)
+            make.bottom.equalTo(self).offset(0)
         }
         
         titleLabel.snp_makeConstraints { [unowned self] make in
